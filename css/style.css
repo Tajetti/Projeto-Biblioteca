@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{background-color: #1E2533;}
@@ -56,7 +57,7 @@ body{background-color: #1E2533;}
 .BoxIdentification .login{
     height: 45px;
     color: black;
-    padding: 5px 10px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     text-decoration: none;
@@ -71,7 +72,7 @@ body{background-color: #1E2533;}
 .BoxIdentification .Registro{
     color: white;
     height: 45px;
-    padding: 5px 10px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     text-decoration: none;
@@ -93,7 +94,7 @@ body{background-color: #1E2533;}
 }
 
 .selecao ul{
-    gap: 6em;
+    gap: 5em;
     height: 50px;
     display: flex;
     align-items: center;
@@ -115,6 +116,9 @@ body{background-color: #1E2533;}
     border-radius: 10px;
     text-decoration: none;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #DC5F00;
 }.selecao ul li a:hover{
     background-color: #FF7F00;
@@ -152,7 +156,8 @@ body{background-color: #1E2533;}
 }
 
 .descricaoLivro{
-    text-align: justify;
+    display: inline;
+    align-items: center;
     margin: 0px 10px;
 }
 
@@ -165,11 +170,14 @@ body{background-color: #1E2533;}
     margin-top: 10px;
     border: 1px solid black;
     background-color: #DC5F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descricaoLivro h3, .descricaoLivro p{
     text-align: center;
-    margin-top: -6px;
+    padding: 5px 0px;
 }
 .descricaoLivro a{
     color: white;
@@ -179,7 +187,7 @@ body{background-color: #1E2533;}
 
 footer{
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     color: white;
     margin-top: 20px;
@@ -187,4 +195,44 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #FF7F00;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 40%;
+    text-align: center;
+}.modal-content h3, .modal-content p{
+    padding-top: 20px;
+}.modal-content h3{
+    font-size: 30px;
+}
+
+.close {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
 }
