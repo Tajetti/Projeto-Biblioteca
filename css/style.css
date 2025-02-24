@@ -184,6 +184,13 @@ body{background-color: #1E2533;}
     text-decoration: none;
 }
 
+.box{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 
 footer{
     width: 100%;

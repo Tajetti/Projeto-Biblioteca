@@ -33,10 +33,14 @@
             <div class="sessaoRecomendacao">
                 <div class="selecao">
                     <ul>
-                        <li><a href>Religiosos</a></li>
-                        <li><a href>Contos</a></li>
-                        <li><a href>Romances</a></li>
-                        <li><a href>Autoajuda</a></li>
+                        <li><a href
+                                onclick="filterElements('Todos', event)">Todos</a></li>
+                        <li><a href
+                                onclick="filterElements('Religiosos', event)">Religiosos</a></li>
+                        <li><a href
+                                onclick="filterElements('Contos', event)">Contos</a></li>
+                        <li><a href
+                                onclick="filterElements('Romances', event)">Romances</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,8 +48,8 @@
 
         <section>
             <div class="containerLivros">
-               
-                <div class="campoLivro">
+
+                <div class="box campoLivro Religiosos">
                     <div class="imagemLivro">
                         <img src="img/Capas/Biblia.jpg" alt="Livro">
                     </div>
@@ -53,53 +57,32 @@
                         <h3>Biblia Sagrada</h3>
                         <p>Livro sagrado para os cristãos</p>
                         <div class="LinkLivro">
-                            <a href="#" onClick="abrirModal('modalBiblia')">Detalhes</a>
+                            <a href="#"
+                                onClick="abrirModal('modalBiblia')">Detalhes</a>
                         </div>
                     </div><!--Fim de um livro-->
                 </div>
 
-                <div id="modalBiblia" class="modal" style="display: none;">
+                <div id="modalBiblia" class="box modal" style="display: none;">
                     <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
+                        <span class="close"
+                            onclick="fecharModal()">&times;</span>
                         <h3>BIBLIA SAGRADA</h3>
-                        <p>Detalhes do livro: A Bíblia Sagrada é a palavra divina revelada aos homens, abrangendo ensinamentos sobre fé, amor, moralidade e salvação. Um guia espiritual que inspira milhões de pessoas ao redor do mundo</p>
+                        <p>Detalhes do livro: A Bíblia Sagrada é a palavra
+                            divina revelada aos homens, abrangendo ensinamentos
+                            sobre fé, amor, moralidade e salvação. Um guia
+                            espiritual que inspira milhões de pessoas ao redor
+                            do mundo</p>
                         <!--Download do livro-->
                         <div class="download">
-                            <a href="img/pdf/Biblia_Sagrada_Novo_Testamento_edicao_pa.pdf" download="Biblia Sagrada">Download</a>
+                            <a
+                                href="img/pdf/Biblia_Sagrada_Novo_Testamento_edicao_pa.pdf"
+                                download="Biblia Sagrada">Download</a>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="campoLivro">
-                    <div class="imagemLivro">
-                        <img src="img/Capas/A arte de respirar.jpg" alt="Livro">
-                    </div>
-                    <div class="descricaoLivro">
-                        <h3>A arte de respirar</h3>
-                        <p>Vida, equilíbrio e superação</p>
-                        <div class="LinkLivro">
-                            <a href="#" onClick="abrirModal('LivroArteRespirar')">Detalhes</a>
-                        </div>
-                    </div><!--Fim de um livro-->
-                </div>
-
-                <div id="LivroArteRespirar" class="modal" style="display: none;">
-                    <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
-                        <h3>A arte de respirar</h3>
-                        <p>A "Arte de Respirar" é um guia prático sobre como a respiração consciente pode melhorar a qualidade de vida, trazendo benefícios físicos, emocionais e mentais. O livro apresenta técnicas que promovem o equilíbrio e a superação, ajudando os leitores a alcançar maior paz interior e bem-estar.
-
-                        </p>
-                        <!--Download do livro-->
-                        <div class="download">
-                            <a href="#" download="#">Download</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="campoLivro">
+                <div class="box campoLivro Romances">
                     <div class="imagemLivro">
                         <img src="img/Capas/Campo Secreto.jpg" alt="Livro">
                     </div>
@@ -107,16 +90,24 @@
                         <h3>O Campo Secreto</h3>
                         <p>Um livro repleto de mistérios</p>
                         <div class="LinkLivro">
-                            <a href="#" onClick="abrirModal('LivroCampoSecreto')">Detalhes</a>
+                            <a href="#"
+                                onClick="abrirModal('LivroCampoSecreto')">Detalhes</a>
                         </div>
                     </div><!--Fim de um livro-->
                 </div>
 
-                <div id="LivroCampoSecreto" class="modal" style="display: none;">
+                <div id="LivroCampoSecreto" class="modal"
+                    style="display: none;">
                     <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
+                        <span class="close"
+                            onclick="fecharModal()">&times;</span>
                         <h3>O Campo Secreto</h3>
-                        <p>"Campo Secreto" é uma história de mistério e autodescoberta, onde o protagonista embarca em uma jornada de exploração. Ao adentrar um campo secreto, ele encontra respostas para questões sobre sua própria vida e a natureza das relações humanas, revelando segredos que mudam sua visão de mundo.
+                        <p>"Campo Secreto" é uma história de mistério e
+                            autodescoberta, onde o protagonista embarca em uma
+                            jornada de exploração. Ao adentrar um campo secreto,
+                            ele encontra respostas para questões sobre sua
+                            própria vida e a natureza das relações humanas,
+                            revelando segredos que mudam sua visão de mundo.
 
                         </p>
                         <!--Download do livro-->
@@ -126,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="campoLivro">
+                <div class="box campoLivro Romances">
                     <div class="imagemLivro">
                         <img src="img/Capas/Forever lies.jpg" alt="Livro">
                     </div>
@@ -134,16 +125,24 @@
                         <h3>Forever Lies</h3>
                         <p>Amor, segredos e traição</p>
                         <div class="LinkLivro">
-                            <a href="#" onClick="abrirModal('LivroForeverLies')">Detalhes</a>
+                            <a href="#"
+                                onClick="abrirModal('LivroForeverLies')">Detalhes</a>
                         </div>
                     </div><!--Fim de um livro-->
                 </div>
 
                 <div id="LivroForeverLies" class="modal" style="display: none;">
                     <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
+                        <span class="close"
+                            onclick="fecharModal()">&times;</span>
                         <h3>Forever Lies</h3>
-                        <p>"Forever Lies" é uma narrativa de amor e traição, onde os personagens lidam com os segredos que mantêm e os segredos que são revelados. É uma história emocionante que explora o poder da confiança e os dilemas emocionais causados pelas mentiras, com reviravoltas que desafiam as percepções do que é verdadeiro.
+                        <p>"Forever Lies" é uma narrativa de amor e traição,
+                            onde os personagens lidam com os segredos que mantêm
+                            e os segredos que são revelados. É uma história
+                            emocionante que explora o poder da confiança e os
+                            dilemas emocionais causados pelas mentiras, com
+                            reviravoltas que desafiam as percepções do que é
+                            verdadeiro.
 
                         </p>
                         <!--Download do livro-->
@@ -153,24 +152,33 @@
                     </div>
                 </div>
 
-                <div class="campoLivro">
+                <div class="box campoLivro">
                     <div class="imagemLivro">
-                        <img src="img/Capas/O amor não está morto.jpg" alt="Livro">
+                        <img src="img/Capas/O amor não está morto.jpg"
+                            alt="Livro">
                     </div>
                     <div class="descricaoLivro">
                         <h3>O amor não está morto</h3>
                         <p>Romance e recomeços</p>
                         <div class="LinkLivro">
-                            <a href="#" onClick="abrirModal('LivroAmorNaoMorto')">Detalhes</a>
+                            <a href="#"
+                                onClick="abrirModal('LivroAmorNaoMorto')">Detalhes</a>
                         </div>
                     </div><!--Fim de um livro-->
                 </div>
 
-                <div id="LivroAmorNaoMorto" class="modal" style="display: none;">
+                <div id="LivroAmorNaoMorto" class="modal"
+                    style="display: none;">
                     <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
+                        <span class="close"
+                            onclick="fecharModal()">&times;</span>
                         <h3>O Amor Não Está Morto</h3>
-                        <p>"O Amor Não Está Morto" é uma obra de romance que fala sobre os recomeços na vida amorosa. O livro mostra como o amor verdadeiro pode ser resgatado, mesmo após adversidades e separações. Uma história de redescobrimento de si e de aprendizado, onde o amor se prova resiliente e eterno.
+                        <p>"O Amor Não Está Morto" é uma obra de romance que
+                            fala sobre os recomeços na vida amorosa. O livro
+                            mostra como o amor verdadeiro pode ser resgatado,
+                            mesmo após adversidades e separações. Uma história
+                            de redescobrimento de si e de aprendizado, onde o
+                            amor se prova resiliente e eterno.
 
                         </p>
                         <!--Download do livro-->
@@ -180,7 +188,7 @@
                     </div>
                 </div>
 
-                <div class="campoLivro">
+                <div class="box campoLivro Contos">
                     <div class="imagemLivro">
                         <img src="img/Capas/O jardim Secreto.jpg" alt="Livro">
                     </div>
@@ -188,16 +196,24 @@
                         <h3>O Jardim Secreto</h3>
                         <p>Mistério, amizade e superação</p>
                         <div class="LinkLivro">
-                            <a href="#" onClick="abrirModal('LivroJardimSecreto')">Detalhes</a>
+                            <a href="#"
+                                onClick="abrirModal('LivroJardimSecreto')">Detalhes</a>
                         </div>
                     </div><!--Fim de um livro-->
                 </div>
 
-                <div id="LivroJardimSecreto" class="modal" style="display: none;">
+                <div id="LivroJardimSecreto" class="modal"
+                    style="display: none;">
                     <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
+                        <span class="close"
+                            onclick="fecharModal()">&times;</span>
                         <h3>O Jardim Secreto</h3>
-                        <p>"O Jardim Secreto" é um conto encantador de mistério, amizade e superação. A história gira em torno de uma jovem que descobre um jardim escondido, um lugar mágico que transforma a sua vida e a de seus amigos. A narrativa revela o poder da natureza e do amor para curar feridas e restaurar a esperança.
+                        <p>"O Jardim Secreto" é um conto encantador de mistério,
+                            amizade e superação. A história gira em torno de uma
+                            jovem que descobre um jardim escondido, um lugar
+                            mágico que transforma a sua vida e a de seus amigos.
+                            A narrativa revela o poder da natureza e do amor
+                            para curar feridas e restaurar a esperança.
 
                         </p>
                         <!--Download do livro-->
